@@ -3,56 +3,76 @@ let programaEnFuncionamiento = true;
 let rangoFechas = true;
 
 while (programaEnFuncionamiento == true) {
-    console.log("=============================================")
-    console.log("         Simulador de Gasto Diario           ")
-    console.log("=============================================")
-    console.log("Seleccione una opción:                       ")
-    console.log("                                             ")
-    console.log("1. Registrar nuevo gasto                     ")
-    console.log("2. Listar gastos                             ")
-    console.log("3. Calcular total de gastos                  ")
-    console.log("4. Generar reporte de gastos                 ")
-    console.log("5. Actualizar gasto                          ")
-    console.log("6. Eliminar Gasto                            ")
-    console.log("7. Salir                                     ")
-    console.log("=============================================")
-    
-    seleccionUsuario = prompt(" ")
+    console.log("=============================================");
+    console.log("         Simulador de Gasto Diario           ");
+    console.log("=============================================");
+    console.log("Seleccione una opción:                       ");
+    console.log("                                             ");
+    console.log("1. Registrar nuevo gasto                     ");
+    console.log("2. Listar gastos                             ");
+    console.log("3. Calcular total de gastos                  ");
+    console.log("4. Generar reporte de gastos                 ");
+    console.log("5. Actualizar gasto                          ");
+    console.log("6. Eliminar Gasto                            ");
+    console.log("7. Salir                                     ");
+    console.log("=============================================");
+
+    let seleccionUsuario = prompt("Ingresa una opcion: ");
+    console.log(seleccionUsuario);
+
     if (seleccionUsuario == 1) {
-        console.log("=============================================")
-        console.log("            Registrar Nuevo Gasto            ")
-        console.log("=============================================")
-        console.log("Ingrese la información del gasto:            ")
-        console.log("                                             ")
-        console.log("- Monto del gasto:                           ")
-        montoGasto = prompt(" ")
-        console.log("- Categoría (ej. comida, transporte, entretenimiento, otros):")
-        categoriaGasto = prompt(" ")
-        console.log("- Descripción (opcional):                    ")
-        descripcionGasto = prompt(" ")
-        console.log("                                             ")
-        nuevoGasto = True
+        console.log("=============================================");
+        console.log("            Registrar Nuevo Gasto            ");
+        console.log("=============================================");
+        console.log("Ingrese la información del gasto:            ");
+        console.log("                                             ");
+        console.log("- Monto del gasto:                           ");
+        let montoGasto = prompt(" Ingresa el Monto del gasto: ");
+        console.log(montoGasto);
+        console.log("- Categoría (ej. comida, transporte, entretenimiento, otros):");
+        let categoriaGasto = prompt(" Ingresa la categoria del gasto: ");
+        console.log(categoriaGasto);
+        console.log("- Descripción (opcional):                    ");
+        let descripcionGasto = prompt(" Ingresa una descripcion del gasto: ");
+        console.log(descripcionGasto);
+        console.log("                                             ");
+
+        let nuevoGasto = true;
+        while (nuevoGasto == true) {
+            console.log("Ingrese S para guardar o C para cancelar.");
+            console.log("=============================================");
+            opcionUsuarioSC = prompt(" Ingrese S o C ").toUpperCase();
+            if (opcionUsuarioSC == "S") {
+                console.log(" ¡Gasto guardado Exitosamente!           ");
+                nuevoGasto = false;
+            }
+            else if (opcionUsuarioSC == "C") {
+                console.log(" Registro de Nuevo Gasto Cancelado       ");
+                nuevoGasto = false;
+            }
+            else {
+                console.log(" Verfica que la opcion sea S/C           ")
+            };
+        };
     }
-    programaEnFuncionamiento = false
+
+    else if (seleccionUsuario == 2) {
+        console.log("=============================================")
+        console.log("                Listar Gastos                ")
+        console.log("=============================================")
+        console.log("                                             ")
+        console.log("1. Ver todos los gastos                      ")
+        console.log("2. Filtrar por categoría                     ")
+        console.log("3. Filtrar por rango de fechas               ")
+        console.log("4. Regresar al menú principal                ")
+        console.log("=============================================")
+        opcionUsuario = prompt(" ")
+    }
 }
 
 
 /*
 seleccionUsuario = int(prompt(" "))
-if seleccionUsuario == 1:
-    console.log("=============================================")
-console.log("            Registrar Nuevo Gasto            ")
-console.log("=============================================")
-console.log("Ingrese la información del gasto:            ")
-console.log("                                             ")
-console.log("- Monto del gasto:                           ")
-montoGasto = float(prompt(" "))
-console.log("- Categoría (ej. comida, transporte, entretenimiento, otros):")
-categoriaGasto = str(prompt(" "))
-console.log("- Descripción (opcional):                    ")
-descripcionGasto = str(prompt(" "))
-console.log("                                             ")
-fechaGasto = datetime.now().strftime("%d/%m/%Y")
 nuevoGasto = True
 while (nuevoGasto):
     console.log("Ingrese S para guardar o C para cancelar.")
@@ -60,20 +80,10 @@ console.log("=============================================")
 opcionUsuarioSC = prompt(" ").upper()
 if opcionUsuarioSC == "S":
     console.log(" ¡Gasto guardado Exitosamente!           ")
-id = contadorId(dataSave)
-registroNuevoGasto = {
-    "id": id,
-    "monto": montoGasto,
-    "categoria": categoriaGasto,
-    "descripcion": descripcionGasto,
-    "fecha": fechaGasto,
-}
-dataSave.append(registroNuevoGasto)
-guardarJSON(dataSave)
-nuevoGasto = False
+nuevoGasto = false
             elif opcionUsuarioSC == "C":
 console.log(" Registro de Nuevo Gasto Cancelado       ")
-nuevoGasto = False
+nuevoGasto = false
             else:
 console.log(" Verfica que la opcion sea S/C           ")       
     elif seleccionUsuario == 2:
@@ -129,7 +139,7 @@ if len(gastosPorFecha) > 0:
 console.log("        Gastos en el rango de fechas:        ")
 console.log("=============================================")
 console.log(tabulate(gastosPorFecha, headers = "keys", tablefmt = "simple"))
-rangoFechas = False
+rangoFechas = false
                     else:
 console.log("No se encontraron gastos en ese rango de fechas.")
                 else:
@@ -280,7 +290,7 @@ while (fecha):
 if len(gastoFecha) == 10 and gastoFecha[2] == "/" and gastoFecha[5] == "/" and len(gastoFecha) == 10 and gastoFecha[2] == "/" and gastoFecha[5] == "/":
 gasto["fecha"] = gastoFecha
 console.log(" Cambios guardados exitosamente ")
-fecha = False
+fecha = false
                     else:
 console.log("ERROR")
 console.log("Recuerda ingresar la fecha de manera correcta")
@@ -305,7 +315,7 @@ console.log(" Regresando... ")
 console.log("¿Desea salir del programa? (S/N):            ")
 seleccionUsuarioSN = prompt(" ").upper()
 if seleccionUsuarioSN == "S":
-    programaEnFuncionamiento = False
+    programaEnFuncionamiento = false
         elif seleccionUsuarioSN == "N":
 programaEnFuncionamiento = True
         else:
