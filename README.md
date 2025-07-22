@@ -24,8 +24,9 @@ JavaScript es un lenguaje de programación interpretado, ligero y orientado a ob
 
 
 ```
-EXAMEN_HTML_NAVARROGUSTAVO/
+JAVASCRIPT_S2_NAVARROGUSTAVO/
 ├── Dia1/
+├── Dia1_HomeWork/
 └── README.md
 ```
 
