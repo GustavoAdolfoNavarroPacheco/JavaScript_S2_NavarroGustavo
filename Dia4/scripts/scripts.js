@@ -78,29 +78,154 @@ let JSONChefs = [
 
 
 
-while (programaEnFuncionamiento === true) {
+while (programaEnFuncionamiento == true) {
     let seleccionUsuario = prompt(` =============================================
 Bienvenido a Hamburguesería Web
 =============================================
 A continuacion ingrese una opcion: 
 
-1. Encontrar
-2. Agregar
+1. Añadir
+2. Listar
 3. Eliminar
 4. Actualizar
+5. Consultar
+6. Salir
 =============================================`)
-    if (seleccionUsuario === 1) {
-        let = opcionUsuario = prompt(`=============================================
-    Encontrar
-    =============================================
+    /* OPCION 1 */
+    if (seleccionUsuario == 1) {
+        let = opcionAñadir = prompt(`=============================================
+    Añadir
+=============================================
     A continuacion ingrese una opcion: 
     
-    1. 
+    1. Ingrediente
+    2. Categoria
+    3. Hamburguesa
+    4. Chef
+    5. Regresar
     =============================================`)
+        /* SUBOPCION 1 */
+        if (opcionAñadir == 1) {
+            alert(`=============================================
+        Seleccionaste Añadir Ingredientes
+=============================================`)
+            let añadirNombre_I = prompt(`=============================================
+        Añadir Ingredientes
+=============================================
+        Ingrese el nombre del Ingrediente: `)
+            let añadirDescripcion_I = prompt(`=============================================
+        Añadir Ingredientes
+=============================================
+        Ingrese la descripcion del Ingrediente: `)
+            let añadirPrecio_I = prompt(`=============================================
+        Añadir Ingredientes
+=============================================
+        Ingrese el precio del Ingrediente: `)
+            let añadirStock_I = prompt(`=============================================
+        Añadir Ingredientes
+=============================================
+        Ingrese el stock del Ingrediente: `)
+            let añadirMomentaneo_I = {
+                "nombre": añadirNombre_I,
+                "descripcion": añadirDescripcion_I,
+                "precio": añadirPrecio_I,
+                "stock": añadirStock_I
+            }
+            JSONIngredientes.push(añadirMomentaneo_I)
+        }
+        /* SUBOPCION 2 */
+        else if (opcionAñadir == 2) {
+            alert(`=============================================
+        Seleccionaste Añadir Categoria
+=============================================`)
+            let añadirNombre_C = prompt(`=============================================
+        Añadir Categoria
+=============================================
+        Ingrese el nombre de la Categoria: `)
+            let añadirDescripcion_C = prompt(`=============================================
+        Añadir Categoria
+=============================================
+        Ingrese la descripcion de la Categoria: `)
+            let añadirMomentaneo_C = {
+                "nombre": añadirNombre_C,
+                "descripcion": añadirDescripcion_C,
+            }
+            JSONIngredientes.push(añadirMomentaneo_C)
+        }
+        /* SUBOPCION 3 */
+        else if (opcionAñadir == 2) {
+            alert(`=============================================
+        Seleccionaste Añadir Categoria
+=============================================`)
+            let añadirNombre_H = prompt(`=============================================
+        Añadir Categoria
+=============================================
+        Ingrese el nombre de la Hamburguesa: `)
+            let añadirCategoria_H = prompt(`=============================================
+        Añadir Categoria
+=============================================
+        Ingrese la categoria de la Hamburguesa: `)
+            let añadirIngredientes_H = prompt(`=============================================
+        Añadir Categoria
+=============================================
+        Ingrese los ingredientes de la Hamburguesa: `)
+            let añadirPrecio_H = prompt(`=============================================
+        Añadir Categoria
+=============================================
+        Ingrese la precio de la Hamburguesa: `)
+            let añadirChef_H = prompt(`=============================================
+        Añadir Categoria
+=============================================
+        Ingrese el chef de la Hamburguesa: `)
+            let añadirMomentaneo_H = {
+                "nombre": añadirNombre_H,
+                "categoria": añadirCategoria_H,
+                "ingredientes" añadirIngredientes_H,
+            }
+            JSONIngredientes.push(añadirMomentaneo_H)
+            /*"nombre": "Clásica",
+        "categoria": "Clásica",
+        "ingredientes": ["Pan", "Carne de res", "Queso cheddar", "Lechuga", "Tomate", "Cebolla", "Mayonesa", "Ketchup"],
+        "precio": 10,
+        "chef": "ChefA" */
+        }
+
     }
 
-};
+    /* OPCION 2 */
+    else if (seleccionUsuario == 2) {
+        let = opcionListar = prompt(`=============================================
+    Listar
+=============================================
+    A continuacion ingrese una opcion: 
+    
+    1. Ingrediente
+    2. Categoria
+    3. Hamburguesa
+    4. Chef
+    5. Regresar
+    =============================================`)
+        if (opcionListar == 1) {
+            let listaIngredientes = `=============================================\n`;
+            listaIngredientes += `Lista de Ingredientes:\n`;
+            listaIngredientes += `=============================================\n`;
 
+            for (let i = 0; i < JSONIngredientes.length; i++) {
+                listaIngredientes += `- ${i + 1} \n Nombre: ${JSONIngredientes[i].nombre} \n Descripcion ${JSONIngredientes[i].descripcion} \n Precio: ${JSONIngredientes[i].precio} \n Stock: ${JSONIngredientes[i].stock} \n _____________________________________________ \n `;
+            };
+
+            alert(listaIngredientes)
+        }
+    }
+    else if (seleccionUsuario == 6) {
+        alert(`Saliendo...`);
+        programaEnFuncionamiento = false;
+    }
+
+    else {
+        alert(`¡¡¡Verifica que la opcion ingresada sea CORRECTA!!!`)
+    }
+}
 
 
 
