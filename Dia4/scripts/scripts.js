@@ -1,5 +1,10 @@
 
 let programaEnFuncionamiento = true;
+let opcion1 = true;
+let opcion2 = true;
+let opcion3 = true;
+let opcion4 = true;
+let opcion5 = true;
 
 let JSONIngredientes = [
     {
@@ -91,110 +96,140 @@ A continuacion ingrese una opcion:
 5. Consultar
 6. Salir
 =============================================`)
+
     /* OPCION 1 */
     if (seleccionUsuario == 1) {
-        let = opcionAñadir = prompt(`=============================================
-    Añadir
-=============================================
-    A continuacion ingrese una opcion: 
-    
-    1. Ingrediente
-    2. Categoria
-    3. Hamburguesa
-    4. Chef
-    5. Regresar
-    =============================================`)
-        /* SUBOPCION 1 */
-        if (opcionAñadir == 1) {
-            alert(`=============================================
-        Seleccionaste Añadir Ingredientes
-=============================================`)
-            let añadirNombre_I = prompt(`=============================================
-        Añadir Ingredientes
-=============================================
-        Ingrese el nombre del Ingrediente: `)
-            let añadirDescripcion_I = prompt(`=============================================
-        Añadir Ingredientes
-=============================================
-        Ingrese la descripcion del Ingrediente: `)
-            let añadirPrecio_I = prompt(`=============================================
-        Añadir Ingredientes
-=============================================
-        Ingrese el precio del Ingrediente: `)
-            let añadirStock_I = prompt(`=============================================
-        Añadir Ingredientes
-=============================================
-        Ingrese el stock del Ingrediente: `)
-            let añadirMomentaneo_I = {
-                "nombre": añadirNombre_I,
-                "descripcion": añadirDescripcion_I,
-                "precio": añadirPrecio_I,
-                "stock": añadirStock_I
-            }
-            JSONIngredientes.push(añadirMomentaneo_I)
-        }
-        /* SUBOPCION 2 */
-        else if (opcionAñadir == 2) {
-            alert(`=============================================
-        Seleccionaste Añadir Categoria
-=============================================`)
-            let añadirNombre_C = prompt(`=============================================
-        Añadir Categoria
-=============================================
-        Ingrese el nombre de la Categoria: `)
-            let añadirDescripcion_C = prompt(`=============================================
-        Añadir Categoria
-=============================================
-        Ingrese la descripcion de la Categoria: `)
-            let añadirMomentaneo_C = {
-                "nombre": añadirNombre_C,
-                "descripcion": añadirDescripcion_C,
-            }
-            JSONIngredientes.push(añadirMomentaneo_C)
-        }
-        /* SUBOPCION 3 */
-        else if (opcionAñadir == 2) {
-            alert(`=============================================
-        Seleccionaste Añadir Categoria
-=============================================`)
-            let añadirNombre_H = prompt(`=============================================
-        Añadir Categoria
-=============================================
-        Ingrese el nombre de la Hamburguesa: `)
-            let añadirCategoria_H = prompt(`=============================================
-        Añadir Categoria
-=============================================
-        Ingrese la categoria de la Hamburguesa: `)
-            let añadirIngredientes_H = prompt(`=============================================
-        Añadir Categoria
-=============================================
-        Ingrese los ingredientes de la Hamburguesa: `)
-            let añadirPrecio_H = prompt(`=============================================
-        Añadir Categoria
-=============================================
-        Ingrese la precio de la Hamburguesa: `)
-            let añadirChef_H = prompt(`=============================================
-        Añadir Categoria
-=============================================
-        Ingrese el chef de la Hamburguesa: `)
-            let añadirMomentaneo_H = {
-                "nombre": añadirNombre_H,
-                "categoria": añadirCategoria_H,
-                "ingredientes" añadirIngredientes_H,
-            }
-            JSONIngredientes.push(añadirMomentaneo_H)
-            /*"nombre": "Clásica",
-        "categoria": "Clásica",
-        "ingredientes": ["Pan", "Carne de res", "Queso cheddar", "Lechuga", "Tomate", "Cebolla", "Mayonesa", "Ketchup"],
-        "precio": 10,
-        "chef": "ChefA" */
-        }
+        while (opcion1 == true) {
 
+            let = opcionAñadir = prompt(`=============================================
+        Añadir
+    =============================================
+        A continuacion ingrese una opcion: 
+        
+        1. Ingrediente
+        2. Categoria
+        3. Hamburguesa
+        4. Chef
+        5. Regresar
+        =============================================`)
+            /* SUBOPCION 1 */
+            if (opcionAñadir == 1) {
+                alert(`=============================================
+            Seleccionaste Añadir Ingredientes
+    =============================================`)
+                let añadirNombre_I = prompt(`=============================================
+            Añadir Ingredientes
+    =============================================
+            Ingrese el nombre del Ingrediente: `)
+                let añadirDescripcion_I = prompt(`=============================================
+            Añadir Ingredientes
+    =============================================
+            Ingrese la descripcion del Ingrediente: `)
+                let añadirPrecio_I = prompt(`=============================================
+            Añadir Ingredientes
+    =============================================
+            Ingrese el precio del Ingrediente: `)
+                let añadirStock_I = prompt(`=============================================
+            Añadir Ingredientes
+    =============================================
+            Ingrese el stock del Ingrediente: `)
+                let añadirMomentaneo_I = {
+                    "nombre": añadirNombre_I,
+                    "descripcion": añadirDescripcion_I,
+                    "precio": añadirPrecio_I,
+                    "stock": añadirStock_I
+                }
+                JSONIngredientes.push(añadirMomentaneo_I)
+            }
+            /* SUBOPCION 2 */
+            else if (opcionAñadir == 2) {
+                alert(`=============================================
+            Seleccionaste Añadir Categoria
+    =============================================`)
+                let añadirNombre_C = prompt(`=============================================
+            Añadir Categoria
+    =============================================
+            Ingrese el nombre de la Categoria: `)
+                let añadirDescripcion_C = prompt(`=============================================
+            Añadir Categoria
+    =============================================
+            Ingrese la descripcion de la Categoria: `)
+                let añadirMomentaneo_C = {
+                    "nombre": añadirNombre_C,
+                    "descripcion": añadirDescripcion_C,
+                }
+                JSONCategorias.push(añadirMomentaneo_C)
+            }
+            /* SUBOPCION 3 */
+            else if (opcionAñadir == 3) {
+                alert(`=============================================
+            Seleccionaste Añadir Hamburguesa
+    =============================================`)
+                let añadirNombre_H = prompt(`=============================================
+            Añadir Categoria
+    =============================================
+            Ingrese el nombre de la Hamburguesa: `)
+                let añadirCategoria_H = prompt(`=============================================
+            Añadir Categoria
+    =============================================
+            Ingrese la categoria de la Hamburguesa: `)
+                let añadirIngredientes_H = prompt(`=============================================
+            Añadir Categoria
+    =============================================
+            Ingrese los ingredientes de la Hamburguesa: `)
+                let añadirPrecio_H = prompt(`=============================================
+            Añadir Categoria
+    =============================================
+            Ingrese la precio de la Hamburguesa: `)
+                let añadirChef_H = prompt(`=============================================
+            Añadir Categoria
+    =============================================
+            Ingrese el chef de la Hamburguesa: `)
+                let añadirMomentaneo_H = {
+                    "nombre": añadirNombre_H,
+                    "categoria": añadirCategoria_H,
+                    "ingredientes": añadirIngredientes_H,
+                    "precio": añadirPrecio_H,
+                    "chef": añadirChef_H
+                }
+                JSONHamburguesas.push(añadirMomentaneo_H)
+            }
+            /* SUBOPCION 4 */
+            else if (opcionAñadir == 4) {
+                alert(`=============================================
+            Seleccionaste Añadir Chef
+    =============================================`)
+                let añadirNombre_Ch = prompt(`=============================================
+            Añadir Chef
+    =============================================
+            Ingrese el nombre del Chef `)
+                let añadirEspecialidad_Ch = prompt(`=============================================
+            Añadir Chef
+    =============================================
+            Ingrese la especialidad del Chef: `)
+                let añadirMomentaneo_Ch = {
+                    "nombre": añadirNombre_Ch,
+                    "especialidad": añadirEspecialidad_Ch,
+                }
+                JSONChefs.push(añadirMomentaneo_Ch)
+            }
+            /* SUBOPCION 5 */
+            else if (opcionAñadir == 5) {
+                alert(`Regresando...`)
+                opcion1 = false
+            }
+            /* SUBOPCION  */
+            else {
+                alert(`Verifique la opcion ingresada...`)
+                continue
+            }
+        }
     }
 
     /* OPCION 2 */
     else if (seleccionUsuario == 2) {
-        let = opcionListar = prompt(`=============================================
+        while (opcion2 == true) {
+            let = opcionListar = prompt(`=============================================
     Listar
 =============================================
     A continuacion ingrese una opcion: 
@@ -204,17 +239,53 @@ A continuacion ingrese una opcion:
     3. Hamburguesa
     4. Chef
     5. Regresar
-    =============================================`)
-        if (opcionListar == 1) {
-            let listaIngredientes = `=============================================\n`;
-            listaIngredientes += `Lista de Ingredientes:\n`;
-            listaIngredientes += `=============================================\n`;
+=============================================`)
+            /* SUBOPCION 1 */
+            if (opcionListar == 1) {
+                let listaIngredientes = `=============================================\n`;
+                listaIngredientes += `Lista de Ingredientes:\n`;
+                listaIngredientes += `=============================================\n`;
 
-            for (let i = 0; i < JSONIngredientes.length; i++) {
-                listaIngredientes += `- ${i + 1} \n Nombre: ${JSONIngredientes[i].nombre} \n Descripcion ${JSONIngredientes[i].descripcion} \n Precio: ${JSONIngredientes[i].precio} \n Stock: ${JSONIngredientes[i].stock} \n _____________________________________________ \n `;
-            };
+                for (let i = 0; i < JSONIngredientes.length; i++) {
+                    listaIngredientes += `- ${i + 1} \n Nombre: ${JSONIngredientes[i].nombre} \n Descripcion: ${JSONIngredientes[i].descripcion} \n Precio: ${JSONIngredientes[i].precio} \n Stock: ${JSONIngredientes[i].stock} \n _____________________________________________ \n `;
+                };
 
-            alert(listaIngredientes)
+                alert(listaIngredientes)
+            }
+            /* SUBOPCION 2 */
+            else if (opcionListar == 2) {
+                let listaCategorias = `=============================================\n`;
+                listaCategorias += `Lista de Categorias:\n`;
+                listaCategorias += `=============================================\n`;
+
+                for (let i = 0; i < JSONCategorias.length; i++) {
+                    listaCategorias += `- ${i + 1} \n Nombre: ${JSONCategorias[i].nombre} \n Descripcion: ${JSONCategorias[i].descripcion}\n _____________________________________________ \n `;
+                };
+            
+                alert(listaCategorias)
+            }
+            /* SUBOPCION 3 */
+            else if (opcionListar == 3) {
+                let listaHamburguesas= `=============================================\n`;
+                listaHamburguesas += `Lista de Hamburguesas:\n`;
+                listaHamburguesas += `=============================================\n`;
+
+                for (let i = 0; i < JSONHamburguesas.length; i++) {
+                    listaHamburguesas += `- ${i + 1} \n Nombre: ${JSONHamburguesas[i].nombre} \n Categoria: ${JSONHamburguesas[i].categoria}\n Ingredientes: ${JSONHamburguesas[i].ingredientes}\n Precio: ${JSONHamburguesas[i].precio}\n Chef: ${JSONHamburguesas[i].chef}\n _____________________________________________ \n `;
+                };
+
+                alert(listaHamburguesas)
+            }
+            /* SUBOPCION 5 */
+            else if (opcionAñadir == 5) {
+                alert(`Regresando...`)
+                opcion2 = false
+            }
+            /* SUBOPCION  */
+            else {
+                alert(`Verifique la opcion ingresada...`)
+                continue
+            }
         }
     }
     else if (seleccionUsuario == 6) {
@@ -225,6 +296,7 @@ A continuacion ingrese una opcion:
     else {
         alert(`¡¡¡Verifica que la opcion ingresada sea CORRECTA!!!`)
     }
+
 }
 
 
