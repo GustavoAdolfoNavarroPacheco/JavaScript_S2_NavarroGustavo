@@ -261,12 +261,12 @@ A continuacion ingrese una opcion:
                 for (let i = 0; i < JSONCategorias.length; i++) {
                     listaCategorias += `- ${i + 1} \n Nombre: ${JSONCategorias[i].nombre} \n Descripcion: ${JSONCategorias[i].descripcion}\n _____________________________________________ \n `;
                 };
-            
+
                 alert(listaCategorias)
             }
             /* SUBOPCION 3 */
             else if (opcionListar == 3) {
-                let listaHamburguesas= `=============================================\n`;
+                let listaHamburguesas = `=============================================\n`;
                 listaHamburguesas += `Lista de Hamburguesas:\n`;
                 listaHamburguesas += `=============================================\n`;
 
@@ -276,10 +276,22 @@ A continuacion ingrese una opcion:
 
                 alert(listaHamburguesas)
             }
+            /* SUBOPCION 4 */
+            else if (opcionListar == 4) {
+                let listaChefs = `=============================================\n`;
+                listaChefs += `Lista de Chefs:\n`;
+                listaChefs += `=============================================\n`;
+
+                for (let i = 0; i < JSONChefs.length; i++) {
+                    listaChefs += `- ${i + 1} \n Nombre: ${JSONChefs[i].nombre} \n Especialidad: ${JSONChefs[i].especialidad}\n  _____________________________________________ \n `;
+                };
+
+                alert(listaChefs)
+            }
             /* SUBOPCION 5 */
             else if (opcionAñadir == 5) {
                 alert(`Regresando...`)
-                opcion2 = false
+                opcion2 = false;
             }
             /* SUBOPCION  */
             else {
@@ -288,6 +300,27 @@ A continuacion ingrese una opcion:
             }
         }
     }
+    else if (seleccionUsuario == 3) {
+        while (opcion3 == true) {
+            let = opcionEliminar = prompt(`=============================================
+    Eliminar
+=============================================
+    A continuacion ingrese una opcion: 
+    
+    1. Ingrediente
+    2. Categoria
+    3. Hamburguesa
+    4. Chef
+    5. Regresar
+=============================================`)
+            if (opcionEliminar == 1) {
+                let EliminarIngredientes = `=============================================\n`;
+                listaIngredientes += `Lista de Ingredientes:\n`;
+                listaIngredientes += `=============================================\n`;
+            }
+        }
+    }
+
     else if (seleccionUsuario == 6) {
         alert(`Saliendo...`);
         programaEnFuncionamiento = false;
