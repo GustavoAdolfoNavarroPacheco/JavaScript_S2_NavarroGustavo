@@ -314,9 +314,23 @@ A continuacion ingrese una opcion:
     5. Regresar
 =============================================`)
             if (opcionEliminar == 1) {
-                let EliminarIngredientes = `=============================================\n`;
-                listaIngredientes += `Lista de Ingredientes:\n`;
-                listaIngredientes += `=============================================\n`;
+                let eliminarIngredientes = `=============================================\n`;
+                eliminarIngredientes += `Eliminar Ingredientes:\n`;
+                eliminarIngredientes += `=============================================\n`;
+                eliminarIngredientes += `A continuacion vera la lista de ingredientes: \n`;
+                for (let i = 0; i < JSONIngredientes.length; i++) {
+                    eliminarIngredientes += `- ${i + 1} \n Nombre: ${JSONIngredientes[i].nombre} \n Descripcion: ${JSONIngredientes[i].descripcion} \n Precio: ${JSONIngredientes[i].precio} \n Stock: ${JSONIngredientes[i].stock} \n _____________________________________________ \n `;
+                };
+                alert(eliminarIngredientes)
+                let ingredienteEliminar = prompt(`Ingrese el nombre del ingrediente a eliminar: `)
+                for (let i = 0; i < JSONIngredientes.length; i++) {
+                    if (ingredienteEliminar == JSONIngredientes[i].nombre) {
+                        
+                    }
+                    else {
+                        alert(`Ingrediente no encontrado!!!`)
+                    }
+                };
             }
         }
     }
