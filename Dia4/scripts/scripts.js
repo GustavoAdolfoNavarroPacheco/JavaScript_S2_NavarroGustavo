@@ -1,10 +1,7 @@
 
 let programaEnFuncionamiento = true;
-let opcion1 = true;
-let opcion2 = true;
-let opcion3 = true;
-let opcion4 = true;
-let opcion5 = true;
+
+
 
 let JSONIngredientes = [
     {
@@ -83,7 +80,8 @@ let JSONChefs = [
 
 
 
-while (programaEnFuncionamiento == true) {
+while (programaEnFuncionamiento === true) {
+    let opcion = true;
     let seleccionUsuario = prompt(` =============================================
 Bienvenido a Hamburguesería Web
 =============================================
@@ -99,7 +97,7 @@ A continuacion ingrese una opcion:
 
     /* OPCION 1 */
     if (seleccionUsuario == 1) {
-        while (opcion1 == true) {
+        while (opcion == true) {
 
             let = opcionAñadir = prompt(`=============================================
         Añadir
@@ -216,7 +214,7 @@ A continuacion ingrese una opcion:
             /* SUBOPCION 5 */
             else if (opcionAñadir == 5) {
                 alert(`Regresando...`)
-                opcion1 = false
+                opcion = false
             }
             /* SUBOPCION  */
             else {
@@ -228,7 +226,7 @@ A continuacion ingrese una opcion:
 
     /* OPCION 2 */
     else if (seleccionUsuario == 2) {
-        while (opcion2 == true) {
+        while (opcion == true) {
             let = opcionListar = prompt(`=============================================
     Listar
 =============================================
@@ -291,7 +289,7 @@ A continuacion ingrese una opcion:
             /* SUBOPCION 5 */
             else if (opcionAñadir == 5) {
                 alert(`Regresando...`)
-                opcion2 = false;
+                opcion = false
             }
             /* SUBOPCION  */
             else {
@@ -301,7 +299,7 @@ A continuacion ingrese una opcion:
         }
     }
     else if (seleccionUsuario == 3) {
-        while (opcion3 == true) {
+        while (opcion == true) {
             let = opcionEliminar = prompt(`=============================================
     Eliminar
 =============================================
@@ -313,6 +311,7 @@ A continuacion ingrese una opcion:
     4. Chef
     5. Regresar
 =============================================`)
+            /* SUBOPCION 1 */
             if (opcionEliminar == 1) {
                 let eliminarIngredientes = `=============================================\n`;
                 eliminarIngredientes += `Eliminar Ingredientes:\n`;
@@ -324,20 +323,98 @@ A continuacion ingrese una opcion:
                 alert(eliminarIngredientes)
                 let ingredienteEliminar = prompt(`Ingrese el nombre del ingrediente a eliminar: `)
                 for (let i = 0; i < JSONIngredientes.length; i++) {
-                    if (ingredienteEliminar == JSONIngredientes[i].nombre) {
-                        
+                    if (ingredienteEliminar === JSONIngredientes[i].nombre) {
+                        JSONIngredientes[i].nombre = ""
+                        JSONIngredientes[i].descripcion = ""
+                        JSONIngredientes[i].precio = ""
+                        JSONIngredientes[i].stock = ""
                     }
                     else {
                         alert(`Ingrediente no encontrado!!!`)
                     }
                 };
             }
+            /* SUBOPCION 2 */
+            if (opcionEliminar == 2) {
+                let eliminarCategoria = `=============================================\n`;
+                eliminarCategoria += `Eliminar Categoria:\n`;
+                eliminarCategoria += `=============================================\n`;
+                eliminarCategoria += `A continuacion vera la lista de categorias: \n`;
+                for (let i = 0; i < JSONCategorias.length; i++) {
+                    eliminarCategoria += `- ${i + 1} \n Nombre: ${JSONCategorias[i].nombre} \n Descripcion: ${JSONCategorias[i].descripcion}\n _____________________________________________ \n `;
+                };
+                alert(eliminarCategoria)
+                let categoriaEliminar = prompt(`Ingrese el nombre del ingrediente a eliminar: `)
+                for (let i = 0; i < JSONCategorias.length; i++) {
+                    if (categoriaEliminar === JSONCategorias[i].nombre) {
+                        JSONCategorias[i].nombre = ""
+                        JSONCategorias[i].descripcion = ""
+                    }
+                    else {
+                        alert(`Ingrediente no encontrado!!!`)
+                    }
+                };
+            }
+            /* SUBOPCION 3 */
+            if (opcionEliminar == 3) {
+                let eliminarHamburguesas = `=============================================\n`;
+                eliminarHamburguesas += `Eliminar Hamburguesa:\n`;
+                eliminarHamburguesas += `=============================================\n`;
+                eliminarHamburguesas += `A continuacion vera la lista de categorias: \n`;
+                for (let i = 0; i < JSONHamburguesas.length; i++) {
+                    eliminarHamburguesas += `- ${i + 1} \n Nombre: ${JSONHamburguesas[i].nombre} \n Categoria: ${JSONHamburguesas[i].categoria}\n Ingredientes: ${JSONHamburguesas[i].ingredientes}\n Precio: ${JSONHamburguesas[i].precio}\n Chef: ${JSONHamburguesas[i].chef}\n _____________________________________________ \n `;
+                };
+                alert(eliminarHamburguesas)
+                let HamburguesaEliminar = prompt(`Ingrese el nombre del ingrediente a eliminar: `)
+                for (let i = 0; i < JSONHamburguesas.length; i++) {
+                    if (HamburguesaEliminar === JSONHamburguesas[i].nombre) {
+                        JSONHamburguesas[i].nombre = ""
+                        JSONHamburguesas[i].categoria = ""
+                        JSONHamburguesas[i].ingredientes = ""
+                        JSONHamburguesas[i].precio = ""
+                        JSONHamburguesas[i].chef = ""
+                    }
+                    else {
+                        alert(`Ingrediente no encontrado!!!`)
+                    }
+                };
+            }
+            /* SUBOPCION 4 */
+            if (opcionEliminar == 4) {
+                let eliminarChefs = `=============================================\n`;
+                eliminarChefs += `Eliminar Chef:\n`;
+                eliminarChefs += `=============================================\n`;
+                eliminarChefs += `A continuacion vera la lista de categorias: \n`;
+                for (let i = 0; i < JSONChefs.length; i++) {
+                    eliminarChefs += `- ${i + 1} \n Nombre: ${JSONChefs[i].nombre} \n Especialidad: ${JSONChefs[i].especialidad}\n  _____________________________________________ \n `;
+                };
+                alert(eliminarChefs)
+                let chefEliminar = prompt(`Ingrese el nombre del ingrediente a eliminar: `)
+                for (let i = 0; i < JSONHamburguesas.length; i++) {
+                    if (chefEliminar === JSONHamburguesas[i].nombre) {
+                        JSONHamburguesas[i].nombre = ""
+                        JSONHamburguesas[i].especialidad = ""
+                    }
+                    else {
+                        alert(`Ingrediente no encontrado!!!`)
+                    }
+                };
+            }
+            /* SUBOPCION 5 */
+            else if (opcionAñadir == 5) {
+                alert(`Regresando...`)
+                opcion = false
+            }
+            /* SUBOPCION  */
+            else {
+                alert(`Verifique la opcion ingresada...`)
+                continue
+            }
         }
     }
 
     else if (seleccionUsuario == 6) {
         alert(`Saliendo...`);
-        programaEnFuncionamiento = false;
     }
 
     else {
