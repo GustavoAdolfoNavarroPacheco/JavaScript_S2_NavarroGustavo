@@ -1,6 +1,14 @@
 # JavaScript: Lenguaje de Programación Dinámico
 JavaScript es un lenguaje de programación interpretado, ligero y orientado a objetos. Se utiliza principalmente para la creación de páginas web interactivas, pero también puede ser ejecutado en servidores, gracias a entornos como Node.js.
 
+## Tabla de contenidos
+| Indice | Titulo  |
+|--|--|
+| 1 | Caracteristicas Principales |
+| 2 | Aplicaciones Comunes|
+| 3 | Estructura de Directorios|
+| 4 | Extra|
+
 ## Características Principales
  - Lenguaje de alto nivel: Fácil de aprender y utilizar.
 
@@ -22,7 +30,7 @@ JavaScript es un lenguaje de programación interpretado, ligero y orientado a ob
  - Automatización de tareas: Scripts de automatización y herramientas de línea de comandos.
 
 
-
+## Estructura de Directorios
 ```
 PROYECTO-FILTRO/
 ├── Dia1/
