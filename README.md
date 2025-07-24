@@ -25,29 +25,29 @@ JavaScript es un lenguaje de programación interpretado, ligero y orientado a ob
 
 ```
 PROYECTO-FILTRO/
-├── Dia1/<br>
-│   ├── img/         
-│   │   ├── icon.png        
-│   ├── scripts/         
-│   │   ├── scripts.js  
-│   ├── styles/         
-│   │   ├── styles.css  
+├── Dia1/
+│   ├── img/
+│   │   ├── icon.png
+│   ├── scripts/
+│   │   ├── scripts.js
+│   ├── styles/
+│   │   ├── styles.css
 │   ├── index.html
 ├── Dia1_HomeWork/
-│   ├── img/         
-│   │   ├── icon.png        
-│   ├── scripts/         
+│   ├── img/
+│   │   ├── icon.png
+│   ├── scripts/
 │   │   ├── scripts.js
-│   ├── styles/         
-│   │   ├── styles.css  
+│   ├── styles/
+│   │   ├── styles.css
 │   ├── index.html
 ├── Dia4/
-│   ├── img/         
-│   │   ├── icon.png        
-│   ├── scripts/         
+│   ├── img/
+│   │   ├── icon.png
+│   ├── scripts/
 │   │   ├── scripts.js
-│   ├── styles/         
-│   │   ├── styles.css  
+│   ├── styles/
+│   │   ├── styles.css
 │   ├── index.html
 └── README.md
 ```
