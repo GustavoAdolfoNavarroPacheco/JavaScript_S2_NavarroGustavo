@@ -24,9 +24,31 @@ JavaScript es un lenguaje de programación interpretado, ligero y orientado a ob
 
 
 ```
-JAVASCRIPT_S2_NAVARROGUSTAVO/
-├── Dia1/
+PROYECTO-FILTRO/
+├── Dia1/<br>
+│   ├── img/         
+│   │   ├── icon.png        
+│   ├── scripts/         
+│   │   ├── scripts.js  
+│   ├── styles/         
+│   │   ├── styles.css  
+│   ├── index.html
 ├── Dia1_HomeWork/
+│   ├── img/         
+│   │   ├── icon.png        
+│   ├── scripts/         
+│   │   ├── scripts.js
+│   ├── styles/         
+│   │   ├── styles.css  
+│   ├── index.html
+├── Dia4/
+│   ├── img/         
+│   │   ├── icon.png        
+│   ├── scripts/         
+│   │   ├── scripts.js
+│   ├── styles/         
+│   │   ├── styles.css  
+│   ├── index.html
 └── README.md
 ```
 
