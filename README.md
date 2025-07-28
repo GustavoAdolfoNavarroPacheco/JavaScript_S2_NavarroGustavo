@@ -57,6 +57,14 @@ PROYECTO-FILTRO/
 │   ├── styles/
 │   │   ├── styles.css
 │   ├── index.html
+├── Dia5/
+│   ├── img/
+│   │   ├── icon.png
+│   ├── scripts/
+│   │   ├── scripts.js
+│   ├── styles/
+│   │   ├── styles.css
+│   ├── index.html
 └── README.md
 ```
 

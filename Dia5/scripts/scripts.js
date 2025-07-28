@@ -1,46 +1,47 @@
 function crear() {
-    const nombre = prompt("Ingresa el nombre: ")
-    const apellido = prompt("Ingresa el apellido: ")
+    const nombre = prompt("Ingresa el nombre:");//Crea por solo una vez un tipo y un valor
+    const apellido = prompt("Ingresa el apellido:");
     const persona = {
         "nombre": nombre,
         "apellido": apellido
     }
-    return persona;//objeto
+    return persona;//Objeto
 }
 
-function guardar(persona, listica) {
-    listica.push(persona)
-    return listica
+function guardar(persona, lista) {
+    lista.push(persona);
+    return lista
 }
-
-function {
+function mostrarCompleto(lista) {
     let stringFinal = "";
-    for (i = 0, i < listica.length; i++) {
-        stringFinal = stringFinal + ("\nPersona #" + (i + 1) + " :" + listica[i][nombre] + " " + listica[i][apellido])
-    }
+    for (i = 0; i < listica.length; i++) {
+        stringFinal = stringFinal + ("\nPersona #" + (i + 1) + " :" + listica[i]["nombre"] + " " + listica[i]["apellido"]);
+    };
+    alert(stringFinal);
 }
 
 
-let listica = []
+let listica = [];
 console.log(typeof listica); //No es un dato primitivo, sino un objeto
 //añadir un elemento a la lista
-/*
+/* 
 listica.push("Pepito");
 listica.push("Andres");
 */
 console.log(listica);
+
 listica.push({ "nombre": "Pedro", "apellido": "Gomez" });
 listica.push({ "nombre": "Alejandra", "apellido": "Gomez" });
-listica.push({ "nombre": "Rene", "apellido": "Villazon" });
-// alert(listica);
-// Buscar item en posicion 3
+listica.push({ "nombre": "Rene", "apellido": "Villazón" });
+//alert(listica);
+//Buscar item en posición 3
 
 
 
 let stringFinal = "";
 let personaNueva = crear();
-listica = guardar(personaNueva, listica);
+listica= guardar(personaNueva,listica);
 mostrarCompleto(listica);
 
 
-// alert(stringFinal)
+//alert(stringFinal);
