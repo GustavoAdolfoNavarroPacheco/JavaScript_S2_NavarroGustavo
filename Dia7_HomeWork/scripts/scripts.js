@@ -1,4 +1,4 @@
-function buscarPersona() {
+/* function buscarPersona() {
     const nombreUsar = prompt("Ingresar el nombre a buscar: ");
     const xhr = new XMLHttpRequest(); // La importacion  del XML
     const url = `https://swapi.py4e.com/api/people?name=${nombreUsar}`;
@@ -23,4 +23,4 @@ function buscarPersona() {
 }
 
 
-buscarPersona();
+buscarPersona(); */

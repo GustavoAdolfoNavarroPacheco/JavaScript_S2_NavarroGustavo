@@ -1,4 +1,350 @@
-* {
-    background-color: black;
-    margin: 0;
+@font-face {
+    font-family: 'CinzelBold';
+    src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+.contenedorPregunta {
+    width: 97vw;
+    height: auto;
+    background-color: #1e2025;
+    font-size: 2vi;
+    margin-left: 1.2vi;
+    margin-top: 2vi;
+    border-radius: 2vi;
+    align-items: center;
+    text-align: center;
+}
+
+.text1 {
+    color: white;
+    font-family: 'CinzelBold';
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 2vi;
+}
+
+.flex {
+    display: flex;
+    margin-left: 27.5vw;
+    gap: 1vi;
+}
+
+.buscarPersonaje {
+    width: 30vi;
+    height: 6vh;
+    border-radius: 1.5vi;
+    font-family: 'CinzelBold';
+    padding-left: 2vi;
+    border: 1vi;
+}
+
+.sendButton {
+    font-family: 'CinzelBold';
+    height: 6.5vh;
+    width: 7vi;
+    border-radius: 1.5vi;
+    border: 1vi;
+    cursor: pointer;
+    margin-bottom: 2vi;
+}
+
+.sendText {
+    margin-top: 0.5vi;
+}
+
+.contenedorResultado {
+    width: 97vw;
+    height: auto;
+    background-color: #1e2025;
+    color: white;
+    font-family: 'CinzelBold';
+    font-size: 1.5vw;
+    margin-left: 1.2vi;
+    margin-top: 1vi;
+    border-radius: 2vi;
+    align-items: center;
+    text-align: left;
+    display: grid;
+    grid: auto auto;
+}
+
+.name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.name_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1;
+    width: 67.9vw;
+}
+
+.line1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 95vw;
+    height: 0.1vi;
+    background-color: gray;
+    margin-left: 1vw;
+    opacity: 0.5;
+}
+
+.height {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 3;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.height_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 3;
+    width: 67.9vw;
+}
+
+.mass {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 5;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.mass_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 5;
+    width: 67.9vw;
+}
+
+.hair_color {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 7;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.hair_color_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 7;
+    width: 67.9vw;
+}
+
+.skin_color {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 9;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.skin_color_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 9;
+    width: 67.9vw;
+}
+
+.eye_color {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 11;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.eye_color_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 11;
+    width: 67.9vw;
+}
+
+.birth_year {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 13;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.birth_year_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 13;
+    width: 67.9vw;
+}
+
+.gender {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 15;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.gender_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 15;
+    width: 67.9vw;
+}
+
+.homeworld {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 17;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.homeworldFrame {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 17;
+    width: 65vw;
+    background-color: white;
+    border-radius: 1vi;
+    color: black;
+    padding-left: 1vi;
+    margin-top: 1vi;
+    margin-bottom: 1vi;
+}
+
+.films {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 19;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.filmsFrame {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 19;
+    width: 65vw;
+    background-color: white;
+    border-radius: 1vi;
+    color: black;
+    padding-left: 1vi;
+    margin-top: 1vi;
+    margin-bottom: 1vi;
+}
+
+.species {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 21;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.speciesFrame {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 21;
+    width: 65vw;
+    background-color: white;
+    border-radius: 1vi;
+    color: black;
+    padding-left: 1vi;
+    margin-top: 1vi;
+    margin-bottom: 1vi;
+}
+
+.vehicles {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 23;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.vehiclesFrame {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 23;
+    width: 65vw;
+    background-color: white;
+    border-radius: 1vi;
+    color: black;
+    padding-left: 1vi;
+    margin-top: 1vi;
+    margin-bottom: 1vi;
+}
+
+
+.starships {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 25;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.starshipsFrame {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 25;
+    width: 65vw;
+    background-color: white;
+    border-radius: 1vi;
+    color: black;
+    padding-left: 1vi;
+    margin-top: 1vi;
+    margin-bottom: 1vi;
+}
+
+.created {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 27;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.created_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 27;
+    width: 67.9vw;
+}
+
+.edited {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 29;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.edited_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 29;
+    width: 67.9vw;
+}
+
+.url {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 31;
+    width: 29.1vw;
+    padding-left: 1vi;
+}
+
+.url_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 31;
+    width: 67.9vw;
 }
