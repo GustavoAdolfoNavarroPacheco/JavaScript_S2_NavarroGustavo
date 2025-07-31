@@ -12,20 +12,24 @@
 <body>
     <div class="mainContainer">
         <img class="pokedex" src="img/pokedex.png" />
+        <div class="img">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/234.gif"
+                alt="pokemon" class="pokemonImg">
+        </div>
         <div class="mostrar" id="mostrar"> </div>
         <input type="text" id="mainInput" placeholder="Name or Number" />
         <div class="buttonContainer">
             <button class="prev" id="prevButton" onclick="mostrarPokemon()">
                 <p>
-                    < Prev 
-                </p>
+                    < Prev </p>
             </button>
-            <button class="next" id="nextButton" onclick="next()">
+            <button class="next" id="nextButton" onclick="mostrarSiguientePokemon()">
                 <p>
                     Next >
                 </p>
             </button>
         </div>
+
     </div>
 </body>
 <script src="scripts/scripts.js"> </Script>

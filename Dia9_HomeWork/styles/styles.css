@@ -8,7 +8,7 @@
 
     body {
         width: 100%;
-        height: 53.1vw;
+        min-height: 100vh;
         background-image: linear-gradient(white, aqua);
         text-align: center;
         justify-content: center;
@@ -38,6 +38,25 @@
         margin-left: 5vw; 
         text-align: right;
         font-weight: 600;
+    }
+
+    .img {
+        height: 8vw;
+        width: 11.9vw;
+        margin-top: 8vw;
+        margin-left: 3.2vw;
+        position: absolute;
+        border: red solid 1px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pokemonImg {
+        position: absolute;
+        height: 5vw;
+        border: red solid 1px;
+        left: 50%;
     }
 
     #mainInput {
