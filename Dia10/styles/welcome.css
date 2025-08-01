@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'OutfitSemiBold';
+    src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    background-color: darkgreen;
+    font-family: 'OutfitSemiBold';
+    text-decoration: none;
+    color: white;
+}
+
+.mainContainer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.gameTitle {
+    color: white;
+    font-size: 8vw;
+    margin-top: 13vw;
+}
+
+.buttonContainer {
+    font-family: 'OutfitSemiBold';
+    font-size: 1vw;
+    margin-top: 3vw;
+}
+
+.buttonContainer button{
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.playButton {
+    width: 7vw;
+    height: 2vw;
+    color: white;
+    border: white 0.1vw solid;
+    border-radius: 0.3vw;
+    margin-right: 4vw;
+}
+
+.rulesButton {
+    width: 11vw;
+    height: 2vw;
+    margin-left: 3vw;
+    color: white;
+    border: white 0.1vw solid;
+    border-radius: 0.3vw;
+    margin-right: 4vw;
+}
+
+.helpButton {
+    width: 7vw;
+    height: 2vw;
+    margin-left: 3vw;
+    color: white;
+    border: white 0.1vw solid;
+    border-radius: 0.3vw;
+}
+
+/* Creditos */
+
+footer {
+    position: fixed;
+    margin-left: 43%;
+    margin-top: 25%;
+    font-size: 1vw;
+}
+
+@media screen {
+    
+}
