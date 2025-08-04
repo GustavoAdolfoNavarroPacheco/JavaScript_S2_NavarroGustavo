@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'OutfitSemiBold';
+    src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'OutfitLight';
+    src: url(../fonts/Outfit-Light.ttf);
+}
+
+* {
+    font-family: 'OutfitSemiBold';
+}
+
+.cuadro {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.cambio {
+    background: aqua;
+    transform: scale(1.2);
+}

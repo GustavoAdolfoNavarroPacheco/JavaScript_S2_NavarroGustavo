@@ -40,7 +40,7 @@
     gap: 5vw;
 }
 
-.buttonContainer button{
+.buttonContainer button {
     font-size: 1.5vw;
     cursor: pointer;
 }
@@ -51,6 +51,11 @@
     color: white;
     border: white 0.1vw solid;
     border-radius: 0.3vw;
+    
+}
+
+.playButton:hover{
+    animation: buttonAnimation 0.2s;
 }
 
 .rulesButton {
@@ -69,7 +74,20 @@
     border-radius: 0.3vw;
 }
 
+@keyframes buttonAnimation {
+    0% {
+        width: 10vw;
+        height: 3.5vw;
+        font-size: 1.5vw;
+    }
 
-@media screen {
-    
+    50% {
+        width: 10.5vw;
+        height: 3.8vw;
+    }
+
+    100% {
+        width: 11vw;
+        height: 4vw;
+    }
 }
