@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'OutfitSemiBold';
+    src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'OutfitLight';
+    src: url(../fonts/Outfit-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'OutfitSemiBold';
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: darkgreen;
+}
+
+.mainContainer {
+    width: 94vw;
+    height: auto;
+    text-align: center;
+    margin-left: 3vw;
+    display: flex;
+    gap: 3vw;
+    margin-top: 3vw;
+}
+
+.title {
+    font-size: 3vw;
+    text-align: left;
+}
+
+.arrow {
+    width: 3vw;
+}
+
+.line {
+    width: 94vw;
+    background-color: white;
+    height: 0.1vw;
+    margin-left: 3vw;
+    margin-top: 0.7vw;
+}
+
+.rules {
+    width: 94vw;
+    margin-left: 3vw;
+    display: grid;
+    grid: auto auto;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    gap: 3vw;
+    margin-bottom: 3vw;
+}
+
+.color {
+    font-family: 'OutfitLight';
+    font-size: 1.5vw;
+}
+
+.frame1 {
+    border: 0.2vw solid white;
+    width: 44vw;
+    height: auto;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    grid-column: 1/2;
+    grid-row: 1;
+    font-size: 2vw;
+    line-height: 1.7vw;
+    border-radius: 0.5vw;
+}
+
+.frame2 {
+    border: 0.2vw solid white;
+    width: 44vw;
+    height: auto;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    grid-column: 2/3;
+    grid-row: 1;
+    font-size: 2vw;
+    line-height: 1.7vw;
+    border-radius: 0.5vw;
+}
+
+.frame3 {
+    border: 0.2vw solid white;
+    width: 44vw;
+    height: auto;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    grid-column: 1/2;
+    grid-row: 2;
+    font-size: 2vw;
+    line-height: 1.7vw;
+    border-radius: 0.5vw;
+}
+
+.frame4 {
+    border: 0.2vw solid white;
+    width: 44vw;
+    height: 10vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    grid-column: 2/3;
+    grid-row: 2;
+    font-size: 2vw;
+    border-radius: 0.5vw;
+    line-height: 1.7vw;
+}
+
+.frame5 {
+    border: 0.2vw solid white;
+    width: 44vw;
+    height: 10vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    grid-column: 2/3;
+    grid-row: 3;
+    font-size: 2vw;
+    line-height: 1.7vw;
+    border-radius: 0.5vw;
+    margin-top: -8vw;
+}
+

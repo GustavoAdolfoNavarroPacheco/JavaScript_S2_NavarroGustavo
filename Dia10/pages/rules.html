@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./img/icon.png">
-    <title> Gustavo's Js </title>
-    <link rel="stylesheet" href="../styles/welcome.css">
+    <title> Rules | BlackJack </title>
+    <link rel="stylesheet" href="../styles/rules.css">
 </head>
+
 <body>
-    
+    <div class="mainContainer">
+        <a href="../welcome.html"> <img src="../img/arrow.png" class="arrow"> </a>
+        <p class="title">
+            Reglas
+        </p>
+    </div>
+    <div class="line"> </div>
+    <div class="rules">
+        <div class="frame1">
+            <p>
+                Objetivo del Juego <br>
+                <br>
+                <span class="color">
+                    Obtener una mano con un valor lo más cercano posible a 21 sin pasarse.
+                </span>
+            </p>
+        </div>
+        <div class="frame2">
+            <p>
+                Valor de las Cartas <br>
+                <br>
+                <span class="color">
+                    - Cartas del 2 al 10 → Valen su número. <br>
+                    - J, Q, K (figuras) → Valen 10 puntos. <br>
+                    - As (A) → Vale 1 o 11 puntos, según lo que más convenga al jugador.
+                </span>
+            </p>
+        </div>
+        <div class="frame3">
+            <p>
+                Turno del Jugador <br>
+                <br>
+                <span class="color">
+                    - Se reparten dos cartas. <br>
+                </span>
+                <br>
+                Puedes: <br>
+                <br>
+                <span class="color">
+                    - Pedir carta (Hit) → Añadir una carta. <br>
+                    - Quedarte (Stand) → No recibir más cartas. <br>
+                    - Si el valor total de tus cartas pasa de 21, pierdes automáticamente (te pasas o "bust").
+                </span>
+            </p>
+        </div>
+        <div class="frame4">
+            <p>
+                Turno del Crupier (la máquina) <br>
+                <br>
+                <span class="color">
+                    El crupier también recibe dos cartas (una puede estar oculta). <br>
+                    El crupier debe pedir cartas hasta llegar a 17 o más. <br>
+                    Si se pasa de 21, el jugador gana automáticamente.
+                </span>
+            </p>
+        </div>
+        <div class="frame5">
+            <p>
+                Ganador <br>
+                <br>
+                <span class="color">
+                    Si tienes más puntos que el crupier, ganas. <br>
+                    Si el crupier tiene más, pierdes. <br>
+                    Si hay empate en puntos, es un "push" (empate, nadie gana).
+                </span>
+            </p>
+        </div>
+    </div>
 </body>
-    <script src="../scripts/welcome.js"> </Script>
 </html>

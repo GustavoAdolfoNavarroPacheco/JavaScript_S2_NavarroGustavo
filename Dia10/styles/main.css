@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'OutfitSemiBold';
+    src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'OutfitLight';
+    src: url(../fonts/Outfit-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'OutfitSemiBold';
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+}
+
+body {
+    background-color: darkgreen;
+}
+
+.arrow {
+    width: 3vw;
+}
+
+.botonesGame {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardImage {
+    display: flex;
+    height: auto;
+    width: 20vw;
+}
+
+.containerDealerCards {
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.containerPlayerCards {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2;
+    margin-left: 4vw;
+}
+
+.dealerPoints {
+    color: white;
+    display: flex;
+}
+
+.gameContainer {
+    border: 0.15vw solid white;
+    border-radius: 0.5vw;
+    display: grid;
+    grid: auto auto;
+    height: auto;
+    margin-left: 3vw;
+    margin-top: 2vw;
+    width: 94vw;
+}
+
+.line {
+    background-color: white;
+    height: 0.1vw;
+    margin-left: 3vw;
+    margin-top: 0.7vw;
+    width: 94vw;
+}
+
+.playerPoints {
+    color: white;
+    display: flex;
+}
+
+.stand {
+    align-items: center;
+    background: none;
+    border: 0.15vw solid white;
+    border-radius: 0.5vw;
+    display: flex;
+    height: 3vw;
+    justify-content: center;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    outline: none;
+    width: 15vw;
+    font-size: 1.5vw;
+}
+
+.takeCard {
+    align-items: center;
+    background: none;
+    border: 0.15vw solid white;
+    border-radius: 0.5vw;
+    display: flex;
+    height: 3vw;
+    justify-content: center;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    outline: none;
+    width: 15vw;
+    font-size: 1.5vw;
+}
+
+.textScoreDealer {
+    grid-column: 2/3;
+    grid-row: 1;
+    margin-left: 14vw;
+    margin-top: 2vw;
+}
+
+.textScorePlayer {
+    grid-column: 1/2;
+    grid-row: 1;
+    margin-left: 18vw;
+    margin-top: 2vw;
+}
+
+.title {
+    font-size: 3vw;
+    text-align: left;
+}
+
+.topContainer {
+    display: flex;
+    gap: 3vw;
+    height: auto;
+    margin-left: 3vw;
+    margin-top: 1vw;
+    text-align: center;
+    width: 94vw;
+}
+
+#gameMessage {
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    grid-column: 1 / -1;
+    margin-top: -3vw;
+}

@@ -19,57 +19,56 @@
 
 .gameTitle {
     color: white;
-    font-size: 8vw;
-    margin-top: 13vw;
+    font-size: 10vw;
+    margin-top: 11vw;
+}
+
+.credits {
+    position: absolute;
+    font-size: 1vw;
+    margin-left: 56vw;
+    margin-top: -2vw;
 }
 
 .buttonContainer {
     font-family: 'OutfitSemiBold';
     font-size: 1vw;
     margin-top: 3vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5vw;
 }
 
 .buttonContainer button{
-    font-size: 1vw;
+    font-size: 1.5vw;
     cursor: pointer;
 }
 
 .playButton {
-    width: 7vw;
-    height: 2vw;
+    width: 10vw;
+    height: 3.5vw;
     color: white;
     border: white 0.1vw solid;
     border-radius: 0.3vw;
-    margin-right: 4vw;
 }
 
 .rulesButton {
-    width: 11vw;
-    height: 2vw;
-    margin-left: 3vw;
+    width: 15vw;
+    height: 3.5vw;
     color: white;
     border: white 0.1vw solid;
     border-radius: 0.3vw;
-    margin-right: 4vw;
 }
 
 .helpButton {
-    width: 7vw;
-    height: 2vw;
-    margin-left: 3vw;
+    width: 10vw;
+    height: 3.5vw;
     color: white;
     border: white 0.1vw solid;
     border-radius: 0.3vw;
 }
 
-/* Creditos */
-
-footer {
-    position: fixed;
-    margin-left: 43%;
-    margin-top: 25%;
-    font-size: 1vw;
-}
 
 @media screen {
     

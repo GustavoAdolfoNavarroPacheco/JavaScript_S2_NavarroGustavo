@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./img/icon.png">
-    <title> Gustavo's Js </title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title> Game | BlackJack </title>
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-    <div class="mainContainer">
-        <div class="topBar">
-            
-        </div>
-        <div class="game">
-
-        </div>
+    <div class="topContainer">
+        <a href="../welcome.html">
+            <img src="../img/arrow.png" class="arrow">
+        </a>
+        <p class="title">Game</p>
     </div>
+
+    <div class="line"></div>
+
+    <div class="gameContainer">
+        <div class="textScorePlayer">
+            <p class="playerPoints" id="playerPoints">Player Score: </p>
+        </div>
+        <div class="containerPlayerCards" id="containerPlayerCards">
+            <img src="../img/cardBehind.png" class="cardImage">
+            <img src="../img/cardBehind.png" class="cardImage">
+        </div>
+
+        <div class="textScoreDealer">
+            <p class="dealerPoints" id="dealerPoints">Dealer Score: </p>
+        </div>
+        <div class="containerDealerCards" id="containerDealerCards">
+            <img src="../img/cardBehind.png" class="cardImage">
+            <img src="../img/cardBehind.png" class="cardImage">
+        </div>  
+    </div>
+
+    <br><br>
+
+    <footer>
+        <div class="botonesGame">
+            <button class="stand" id="stand"> Plantarte</button>
+            <button class="takeCard" id="takeCard"> Pedir </button>
+        </div>
+    </footer>
+
+    <div id="gameMessage"></div>
+
+    <script src="../scripts/main.js"></script>
 </body>
-    <script src="./scripts/main.js"> </Script>
 </html>
