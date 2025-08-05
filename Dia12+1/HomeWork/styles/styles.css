@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'OutfitSemiBold';
+    src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'OutfitLight';
+    src: url(../fonts/Outfit-Light.ttf);
+}
+
+* {
+    font-family: 'OutfitSemiBold';
+}
+
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;}
+
+.title {
+    margin-top: 3vw;
+}
+
+.inputText {
+    width: 20vw;
+    height: 2.5vw;
+    padding-left: 0.3vw;
+    font-size: 1.2vw;
+    border-radius: 0.3vw;
+    border: 0.1vw solid black;
+}
+
+.inputText:focus {
+    border-radius: 0.3vw;
+    border: 0.1vw solid black;
+    outline: none;
+}
+
+.search {
+    display: flex;
+    gap: 1vw;
+    margin-top: 2vw;
+}
+
+.buttonSearch {
+    font-size: 1.2vw;
+    width: 7vw;
+    height: 2.5vw;
+    border-radius: 0.3vw;
+    border: 0.1vw solid black
+}
+
+.buttonSearch:hover {
+    background-color: gray;
+}
+
+.resultado{
+    margin-top: 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.card{
+    background-color: #fff;
+    padding: 1vw;
+    border: 0.1vw solid black;
+    border-radius: 0.3vw;
+    width: 10vw
+}
+
+.card img{
+    width: 100%;
+    border-radius: 0.3vw;
+}
