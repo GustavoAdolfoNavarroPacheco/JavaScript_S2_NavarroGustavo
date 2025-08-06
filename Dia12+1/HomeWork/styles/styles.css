@@ -10,15 +10,17 @@
 
 * {
     font-family: 'OutfitSemiBold';
+    font-size: 1vw;
 }
 
-body{
+body {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;}
+    background-color: bisque;
+}
 
 .title {
     margin-top: 3vw;
@@ -57,7 +59,7 @@ body{
     background-color: gray;
 }
 
-.resultado{
+.resultado {
     margin-top: 4vw;
     display: flex;
     flex-wrap: wrap;
@@ -65,15 +67,25 @@ body{
     gap: 1vw;
 }
 
-.card{
+.card {
     background-color: #fff;
     padding: 1vw;
     border: 0.1vw solid black;
     border-radius: 0.3vw;
-    width: 10vw
+    width: 10vw;
+    text-align: center;
 }
 
-.card img{
+.card img {
     width: 100%;
+    height: auto;
     border-radius: 0.3vw;
+}
+
+.title {
+    font-size: 3vw;
+}
+
+h3 {
+    padding-top: 1vw;
 }

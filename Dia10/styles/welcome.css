@@ -51,11 +51,14 @@
     color: white;
     border: white 0.1vw solid;
     border-radius: 0.3vw;
-    
+
 }
 
-.playButton:hover{
-    animation: buttonAnimation 0.2s;
+.playButton:hover {
+    animation: buttonAnimation 0.3s linear;
+    width: 11vw;
+    height: 4vw;
+    font-size: 1.7vw;
 }
 
 .rulesButton {
@@ -84,10 +87,12 @@
     50% {
         width: 10.5vw;
         height: 3.8vw;
+        font-size: 1.6vw;
     }
 
     100% {
         width: 11vw;
         height: 4vw;
+        font-size: 1.7vw;
     }
 }
