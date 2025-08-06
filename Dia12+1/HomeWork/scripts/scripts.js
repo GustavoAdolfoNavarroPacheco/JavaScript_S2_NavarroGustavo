@@ -1,3 +1,6 @@
+const bodyColor = getElementById("body");
+bodyColor.style.backgroundColor = "darkgreen";
+
 const cors = require('cors');
 
 function buscarSuperHeroe() {

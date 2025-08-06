@@ -11,14 +11,19 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="body">
     <h1 class="title"> Encuentra tu SuperHeroe </h1>
 
     <div class="search">
         <input type="text" class="inputText" id="nombreInput" placeholder="Ingresa un nombre..." />
         <button class="buttonSearch" onclick="buscarSuperHeroe()">Buscar</button>
     </div>
-    <div id="resultados" class="resultado">
+    <div id="resultados" class="resultado"> </div>
+    <footer>
+        <p class="madeBy" id="madeBy">
+            By <span> <a href="https://github.com/GustavoAdolfoNavarroPacheco"> Gustavo Navarro </a> </span>
+        </p>
+    </footer>
 </body>
 <script src="scripts/scripts.js"> </Script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

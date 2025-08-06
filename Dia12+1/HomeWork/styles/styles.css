@@ -11,6 +11,8 @@
 * {
     font-family: 'OutfitSemiBold';
     font-size: 1vw;
+    text-decoration: none;
+    color: black;
 }
 
 body {
@@ -19,11 +21,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
 }
 
 .title {
     margin-top: 3vw;
+    font-size: 3vw;
 }
 
 .inputText {
@@ -78,14 +80,54 @@ body {
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 10vw;
     border-radius: 0.3vw;
-}
-
-.title {
-    font-size: 3vw;
 }
 
 h3 {
     padding-top: 1vw;
+}
+
+footer {
+    margin-top: 3vw;
+}
+
+@media screen and (max-width: 431px) {
+    * {
+        font-size: 2vw;
+    }
+
+    .title {
+        margin-top: 4vw;
+        font-size: 6vw;
+    }
+
+    .inputText {
+        width: 35vw;
+        height: 5vw;
+        padding-left: 1vw;
+        font-size: 2vw;
+        border-radius: 0.5vw;
+        border: 0.1vw solid black;
+    }
+
+    .buttonSearch {
+        font-size: 2vw;
+        width: 10vw;
+        height: 5vw;
+        border-radius: 0.5vw;
+        border: 0.1vw solid black;
+        padding-top: 0.5vw;
+    }
+
+    .card {
+        padding: 1vw;
+        border-radius: 0.5vw;
+        width: 20vw;
+    }
+
+    .card img {
+        height: 20vw;
+        border-radius: 0.5vw;
+    }
 }
