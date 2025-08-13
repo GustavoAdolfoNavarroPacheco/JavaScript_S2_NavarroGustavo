@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'OutfitSemiBold';
+    src: url(../fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'OutfitLight';
+    src: url(../fonts/Outfit-Light.ttf);
+}
+
+* {
+    font-family: 'OutfitSemiBold';
+}
+
